@@ -42,4 +42,8 @@ UserRoutes(app);
 
 Hello(app);
 Lab5(app);
+
+app.get("/env", (req, res) => {
+  res.json(process.env);
+});
 app.listen(4000);
